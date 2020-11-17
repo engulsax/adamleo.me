@@ -1,0 +1,33 @@
+{
+  "about": "I am a software developer, web developer, and programmer.\nMy passion is building excellent software that improves the lives of those around me.\n\nI am currently a student at Jönköping University in Sweden, studying Software Development and Mobile Platforms. \nI love learning new stuff and evolving my skills through practice and reading.",
+  "skills": [
+    {
+      "name": "kotlin",
+      "img": "../assets/kotlin.png"
+    },
+    {
+      "name": "python",
+      "img": "../assets/py.png"
+    },
+    {
+      "name": "C#",
+      "img": "../assets/cs.png"
+    },
+    {
+      "name": "JavaScript",
+      "img": "../assets/js.png"
+    }
+  ],
+  "socialMedia": [
+    {
+      "name": "LinkedIn",
+      "img": "../assets/linkedin.webp",
+      "link": "https://www.linkedin.com/in/adamleo/"
+    },
+    {
+      "name": "GitHub",
+      "img": "../assets/github.png",
+      "link": "https://github.com/engulsax"
+    }
+  ]
+}

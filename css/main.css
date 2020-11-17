@@ -1,0 +1,305 @@
+/*BACKGROUND CSS*/
+.curve-background {
+  background-size: 100vw;
+  margin-top: -10vh;
+  background-image: url("../assets/curve.svg");
+  background-repeat: no-repeat;
+}
+
+.curve-violet-background {
+  background-size: 100vw;
+  background-image: url("../assets/curve-violet.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.gradiant-background {
+  background: rgb(230, 220, 130);
+  background: linear-gradient(
+    180deg,
+    rgba(230, 220, 130, 1) 0%,
+    rgba(255, 247, 178, 1) 100%
+  );
+}
+
+.nav-background {
+  background: rgb(76, 76, 167);
+}
+
+.form-background {
+  padding: 40px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+
+
+/*TEXT CSS*/
+
+.font-raleway {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+.font-poiret {
+  font-family: "Poiret One", cursive;
+}
+
+.large-h-size {
+  font-size: 3.8rem;
+}
+
+.small-h-size {
+  font-size: 1.4rem;
+}
+
+.medium-h-size {
+  font-size: 2.8rem;
+}
+
+.mediumsmall-h-size {
+  font-size: 2rem;
+}
+
+.text-p-size {
+  color: rgb(80, 80, 80);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .large-h-size {
+    font-size: 2rem;
+  }
+  
+  .small-h-size {
+    font-size: 1rem;
+  }
+  
+  .medium-h-size {
+    font-size: 1.5rem;
+  }
+  
+  .mediumsmall-h-size {
+    font-size: 1.5rem;
+  }
+
+  .text-p-size {
+    color: rgb(80, 80, 80);
+    font-size: 15px;
+    font-weight: 600;
+  }
+}
+
+
+ul.nav-menu > li > a {
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 0.8em;
+  padding-right: 5em;
+  color: white;
+}
+
+/*LOGO/MENU*/
+
+.logo{
+  float: left;
+  width: 48px;
+  height: auto;
+}
+
+/*MARGINS, PADDING AND CENTERING*/
+.grid-container {
+  width: 1200px;
+}
+
+.vertical-padding-nav {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.vertical-padding-small {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+
+.vertical-padding-small-bottom {
+  padding-bottom: 2em;
+}
+
+
+.vertical-padding-medium {
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.vertical-padding-large {
+  padding-top: 10em;
+  padding-bottom: 10em;
+}
+
+.horizontal-padding {
+  padding-left: 18vw;
+  padding-right: 18vw;
+}
+
+@media only screen and (max-width: 900px) {
+  .horizontal-padding {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .horizontal-padding {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+
+.small-padding{
+  padding-right: 4vw;
+  padding-left: 4vw;
+}
+
+/*FORM*/
+
+label {
+  color: gray !important;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px !important;
+}
+
+.input-field {
+  font-size:18px !important;
+  height: 45px !important;
+  font-family: "Raleway", sans-serif;
+  border-radius: 10px !important;
+  color: gray !important;
+}
+
+input[type="submit"] {
+  color: black !important;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  background-color: rgb(178, 255, 183) !important;
+  font-size: 18px !important;
+  border-radius: 10px !important;
+  display: inline;
+  float: right;
+}
+
+textarea {
+  -webkit-border-radius: 5px !important;
+  -moz-border-radius: 5px !important;
+  border-radius: 5px !important;
+  font-size: 18px !important;
+  height: 170px !important;
+  width: 100% !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .input-field {
+    font-size: 15px;
+    height: 25px !important;
+  }
+  
+  input[type="submit"] {
+    font-size: 15px;
+    height: 25px !important;
+  }
+  
+  textarea {
+    font-size: 15px;
+    height: 100px !important;
+  }
+
+  label {
+    font-size: 15px !important;
+  }
+}
+
+/*LIST*/
+
+ul {
+  list-style: none !important;
+  margin: 0 !important;
+}
+
+li {
+  display: inline;
+}
+
+ul.tags{
+ margin-top: -1vh !important;
+}
+
+.tags {
+  font-family: "Raleway", sans-serif;
+  color: rgb(76, 76, 167);
+  font-size: 2vh;
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .tags {
+    font-family: "Raleway", sans-serif;
+    color: rgb(76, 76, 167);
+    font-size: 1.5vh;
+    font-weight: 500;
+    margin-right: 20px;
+  }
+}
+
+li > img,
+li > a > img {
+  width: 30px;
+  height: auto;
+  margin-right: 20px;
+}
+
+/*SLICK - SLIDER*/
+
+.project {
+  border-radius: 20px;
+  margin: 10px;
+}
+
+/*IFRAME*/
+
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+/*PROJECT*/
+
+.card {
+  background-color: rgb(242, 242, 242) !important;
+  border-radius: 20px !important;
+  border: 0 !important;
+  padding: 20px;
+}
