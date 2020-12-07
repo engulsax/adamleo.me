@@ -3,23 +3,23 @@
     {
       "name": "Earth Rover",
       "desc": "orem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius congue justo, sed volutpat ligula lobortis id. Aenean euismod, dui ac porta laoreet, eros ipsum pulvinar odio, non rutrum diam lectus eget enim. Nam lacinia neque lacus, vitae rhoncus augue sodales in. Pellentesque vitae justo ac nulla aliquam auctor. Integer et purus ac sapien varius tincidunt. Phasellus ultrices venenatis velit posuere luctus. Proin consequat laoreet erat id ornare. Maecenas et consequat augue. Nam et nulla ut neque lobortis molestie eu eu lectus. Nullam nec pharetra leo, sit amet auctor sapien. Nam fermentum tincidunt nisl sed ultricies.",
-      "img": "../assets/earthrover_img.png",
+      "img": "../assets/earthrover_img2.png",
       "video": "https://www.youtube.com/embed/SoKVDrakUeI",
       "tags": ["#Hardware", "#IOT", "#Python", "#Software", "#Kotlin"]
     },
     {
-      "name": "Hangman",
+      "name": "Bulk",
+      "desc": "orem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius congue justo, sed volutpat ligula lobortis id. Aenean euismod, dui ac porta laoreet, eros ipsum pulvinar odio, non rutrum diam lectus eget enim. Nam lacinia neque lacus, vitae rhoncus augue sodales in. Pellentesque vitae justo ac nulla aliquam auctor. Integer et purus ac sapien varius tincidunt. Phasellus ultrices venenatis velit posuere luctus. Proin consequat laoreet erat id ornare. Maecenas et consequat augue. Nam et nulla ut neque lobortis molestie eu eu lectus. Nullam nec pharetra leo, sit amet auctor sapien. Nam fermentum tincidunt nisl sed ultricies.",
+      "img": "../assets/bulk_img.png",
+      "video": "",
+      "tags": ["#Scrum", "#Android", "#Kotlin", "#Bluetooth"]
+    },
+    {
+      "name": "Hangbot",
       "desc": "orem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius congue justo, sed volutpat ligula lobortis id. Aenean euismod, dui ac porta laoreet, eros ipsum pulvinar odio, non rutrum diam lectus eget enim. Nam lacinia neque lacus, vitae rhoncus augue sodales in. Pellentesque vitae justo ac nulla aliquam auctor. Integer et purus ac sapien varius tincidunt. Phasellus ultrices venenatis velit posuere luctus. Proin consequat laoreet erat id ornare. Maecenas et consequat augue. Nam et nulla ut neque lobortis molestie eu eu lectus. Nullam nec pharetra leo, sit amet auctor sapien. Nam fermentum tincidunt nisl sed ultricies.",
       "img": "../assets/hangman_img.png",
       "video": "",
-      "tags": ["#Software", "#JavaScript", "#Bot", "#Discord"]
-    },
-    {
-      "name": "FlashBash",
-      "desc": "orem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius congue justo, sed volutpat ligula lobortis id. Aenean euismod, dui ac porta laoreet, eros ipsum pulvinar odio, non rutrum diam lectus eget enim. Nam lacinia neque lacus, vitae rhoncus augue sodales in. Pellentesque vitae justo ac nulla aliquam auctor. Integer et purus ac sapien varius tincidunt. Phasellus ultrices venenatis velit posuere luctus. Proin consequat laoreet erat id ornare. Maecenas et consequat augue. Nam et nulla ut neque lobortis molestie eu eu lectus. Nullam nec pharetra leo, sit amet auctor sapien. Nam fermentum tincidunt nisl sed ultricies.",
-      "img": "../assets/flashbash_img.png",
-      "video": "",
-      "tags": ["#Software", "#Application" , "#Kotlin", "#Firestore" ]
+      "tags": ["#Discord", "#Bot" , "#JavaScript", "#Game" ]
     },
     {
       "name": "N-Queens",
@@ -27,13 +27,6 @@
       "img": "../assets/nqueen_img.png",
       "video": "",
       "tags": ["#AI","#GenticAlgorithim", "#Python", "#QT"]
-    },
-    {
-      "name": "Value Iteration",
-      "desc": "orem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius congue justo, sed volutpat ligula lobortis id. Aenean euismod, dui ac porta laoreet, eros ipsum pulvinar odio, non rutrum diam lectus eget enim. Nam lacinia neque lacus, vitae rhoncus augue sodales in. Pellentesque vitae justo ac nulla aliquam auctor. Integer et purus ac sapien varius tincidunt. Phasellus ultrices venenatis velit posuere luctus. Proin consequat laoreet erat id ornare. Maecenas et consequat augue. Nam et nulla ut neque lobortis molestie eu eu lectus. Nullam nec pharetra leo, sit amet auctor sapien. Nam fermentum tincidunt nisl sed ultricies.",
-      "img": "../assets/earthrover_br.png",
-      "video": "",
-      "tags": ["#AI", "#Python", "#ValueIteration", "#QT"]
     }
   ]
 }

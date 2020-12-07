@@ -4,35 +4,26 @@
   margin-top: -10vh;
   background-image: url("../assets/curve.svg");
   background-repeat: no-repeat;
+  background-color: rgba(255, 230, 0, 1);
 }
 
-.curve-violet-background {
-  background-size: 100vw;
-  background-image: url("../assets/curve-violet.svg");
-  background-repeat: no-repeat;
-  background-position: center top;
+.yellow-background {
+  background: rgba(255, 230, 0, 1);
 }
 
-.gradiant-background {
-  background: rgb(230, 220, 130);
-  background: linear-gradient(
-    180deg,
-    rgba(230, 220, 130, 1) 0%,
-    rgba(255, 247, 178, 1) 100%
-  );
+.whiteoffset-background {
+  background: rgb(236, 236, 236);
 }
 
 .nav-background {
-  background: rgb(76, 76, 167);
+  background: rgba(255, 230, 0, 1);
 }
 
 .form-background {
   padding: 40px;
-  background-color: white;
+  background: rgba(255, 230, 0, 1);
   border-radius: 20px;
 }
-
-
 
 /*TEXT CSS*/
 
@@ -42,7 +33,7 @@
 }
 
 .font-poiret {
-  font-family: "Poiret One", cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .large-h-size {
@@ -61,29 +52,32 @@
   font-size: 2rem;
 }
 
+.thin {
+  font-weight: 400;
+}
+
 .text-p-size {
   color: rgb(80, 80, 80);
   font-size: 18px;
-  font-weight: 600;
 }
 
-
 @media only screen and (max-width: 600px) {
-
   .large-h-size {
     font-size: 2rem;
+    text-align: center;
   }
-  
+
   .small-h-size {
     font-size: 1rem;
   }
-  
+
   .medium-h-size {
     font-size: 1.5rem;
   }
-  
+
   .mediumsmall-h-size {
     font-size: 1.5rem;
+    text-align: center;
   }
 
   .text-p-size {
@@ -93,21 +87,27 @@
   }
 }
 
+button.menu-icon::after {
+  background: black;
+  box-shadow: 0 7px 0 black, 0 14px 0 black;
+  -webkit-box-shadow: 0 7px 0 black, 0 14px 0 black;
+}
 
 ul.nav-menu > li > a {
   color: black;
   font-family: "Raleway", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 0.8em;
   padding-right: 5em;
-  color: white;
+  color: black;
 }
 
 /*LOGO/MENU*/
 
-.logo{
+.logo {
   float: left;
   width: 48px;
+  margin: 5px;
   height: auto;
 }
 
@@ -126,14 +126,16 @@ ul.nav-menu > li > a {
   padding-bottom: 2em;
 }
 
-
 .vertical-padding-small-bottom {
   padding-bottom: 2em;
 }
 
+.vertical-padding-medium-top {
+  padding-top: 4em;
+}
 
 .vertical-padding-medium {
-  padding-top: 4em;
+  padding-top: 2em;
   padding-bottom: 4em;
 }
 
@@ -151,6 +153,16 @@ ul.nav-menu > li > a {
   padding-right: 18vw;
 }
 
+.center-element {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.no-margin-padding {
+  margin: 0;
+  padding: 0;
+}
+
 @media only screen and (max-width: 900px) {
   .horizontal-padding {
     padding-left: 10vw;
@@ -165,7 +177,7 @@ ul.nav-menu > li > a {
   }
 }
 
-.small-padding{
+.small-padding {
   padding-right: 4vw;
   padding-left: 4vw;
 }
@@ -173,28 +185,34 @@ ul.nav-menu > li > a {
 /*FORM*/
 
 label {
-  color: gray !important;
-  font-family: "Raleway", sans-serif;
+  color: black !important;
+  font-family: "Raleway", sans-serif !important;
   font-size: 18px !important;
+  margin-top: 5px !important;
 }
 
 .input-field {
-  font-size:18px !important;
+  font-size: 18px !important;
   height: 45px !important;
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif !important;
   border-radius: 10px !important;
-  color: gray !important;
+  color: black !important;
 }
 
 input[type="submit"] {
-  color: black !important;
-  font-family: "Raleway", sans-serif;
+  color: white !important;
+  font-family: "Raleway", sans-serif !important;
   text-align: center;
-  background-color: rgb(178, 255, 183) !important;
+  background: rgb(67, 67, 206) !important;
   font-size: 18px !important;
-  border-radius: 10px !important;
-  display: inline;
-  float: right;
+  font-weight: 600 !important;
+  border-radius: 20px !important;
+  margin: 0;
+  line-height: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 40px;
+  margin: 0px;
 }
 
 textarea {
@@ -205,18 +223,28 @@ textarea {
   height: 170px !important;
   width: 100% !important;
 }
+.social-img {
+  float: right;
+}
+
+.social-img > img {
+  height: 100px;
+  width: auto;
+  margin: -25px;
+  position: absolute;
+}
 
 @media only screen and (max-width: 600px) {
   .input-field {
     font-size: 15px;
-    height: 25px !important;
+    height: 30px !important;
   }
-  
+
   input[type="submit"] {
-    font-size: 15px;
-    height: 25px !important;
+    font-size: 15px !important;
+    height: 30px !important;
   }
-  
+
   textarea {
     font-size: 15px;
     height: 100px !important;
@@ -224,6 +252,10 @@ textarea {
 
   label {
     font-size: 15px !important;
+  }
+
+  .social-img > img {
+    margin: -50px;
   }
 }
 
@@ -238,8 +270,8 @@ li {
   display: inline;
 }
 
-ul.tags{
- margin-top: -1vh !important;
+ul.tags {
+  margin-top: -1vh !important;
 }
 
 .tags {
@@ -302,4 +334,97 @@ li > a > img {
   border-radius: 20px !important;
   border: 0 !important;
   padding: 20px;
+}
+
+/*NAV SCROLL HIDE*/
+
+.scrollhide-nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  transition: -webkit-transform 1s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1),
+    -webkit-transform 1s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.scrollhide-nav.hidden {
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+/*MODAL*/
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Body */
+.modal-body {
+  padding: 2px 16px;
+}
+
+/* Modal Header */
+.modal-header-end {
+  padding-top: 13vh;
+  background-color: rgba(255, 230, 0, 1);
+  background-repeat: no-repeat;
+  background-image: url("../assets/curve.svg");
+}
+.modal-header {
+  border-radius: 20px 20px 0px 0px;
+  padding: 15px 16px;
+  background-color: rgba(255, 230, 0, 1);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: animatetop;
+  width: 80%;
+  background-color: rgb(236, 236, 236);
+  animation-duration: 0.4s;
+  min-height: 100px;
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
