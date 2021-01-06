@@ -1,0 +1,1 @@
+The N Queen is the problem of placing N chess queens on an N×N chessboard so that no two queens attack each other. Only one queen per column. This problem is impossible to solve by a human when the N goes towards higher numbers. This project uses a genetic algorithm to try and solve the N Queens problem as N reaches higher numbers.

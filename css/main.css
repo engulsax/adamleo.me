@@ -1,28 +1,37 @@
+body {
+  overflow-x: hidden;
+}
+
 /*BACKGROUND CSS*/
 .curve-background {
   background-size: 100vw;
   margin-top: -10vh;
   background-image: url("../assets/curve.svg");
   background-repeat: no-repeat;
-  background-color: rgba(255, 230, 0, 1);
+  background-color: #ffe600;
 }
 
 .yellow-background {
-  background: rgba(255, 230, 0, 1);
+  background: #ffe600;
 }
 
 .whiteoffset-background {
-  background: rgb(236, 236, 236);
+  background: #f6f6f6;
 }
 
 .nav-background {
-  background: rgba(255, 230, 0, 1);
+  background: #ffe600;
+  z-index: 0;
 }
 
 .form-background {
   padding: 40px;
-  background: rgba(255, 230, 0, 1);
+  background: #ffe600;
   border-radius: 20px;
+}
+
+.center-text{
+  text-align: center;
 }
 
 /*TEXT CSS*/
@@ -38,6 +47,14 @@
 
 .large-h-size {
   font-size: 3.8rem;
+}
+
+.justify-child-text > div {
+  text-align: justify;
+}
+
+.child-text-padding-right > div {
+  padding-right: 40px;
 }
 
 .small-h-size {
@@ -153,6 +170,11 @@ ul.nav-menu > li > a {
   padding-right: 18vw;
 }
 
+.horizontal-padding-small {
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
 .center-element {
   text-align: center;
   margin: 0 auto;
@@ -163,10 +185,18 @@ ul.nav-menu > li > a {
   padding: 0;
 }
 
+.horizontal-margin {
+  margin: 10px;
+}
+
 @media only screen and (max-width: 900px) {
   .horizontal-padding {
     padding-left: 10vw;
     padding-right: 10vw;
+  }
+  .horizontal-padding-small {
+    padding-left: 2vw;
+    padding-right: 2vw;
   }
 }
 
@@ -175,6 +205,10 @@ ul.nav-menu > li > a {
     padding-left: 5vw;
     padding-right: 5vw;
   }
+  .horizontal-padding-small {
+    padding-left: 1vw;
+    padding-right: 1vw;
+  }
 }
 
 .small-padding {
@@ -182,7 +216,12 @@ ul.nav-menu > li > a {
   padding-left: 4vw;
 }
 
-/*FORM*/
+/*FORM - BUTTONS*/
+
+#help-text{
+  text-align: center;
+  margin-top: 10px;
+}
 
 label {
   color: black !important;
@@ -199,30 +238,89 @@ label {
   color: black !important;
 }
 
-input[type="submit"] {
+input[type="submit"],
+
+
+a.button.primary, button.primary {
   color: white !important;
   font-family: "Raleway", sans-serif !important;
   text-align: center;
-  background: rgb(67, 67, 206) !important;
+  background: #4343ce ;
   font-size: 18px !important;
   font-weight: 600 !important;
   border-radius: 20px !important;
   margin: 0;
-  line-height: 0px;
   padding-left: 30px;
   padding-right: 30px;
   height: 40px;
   margin: 0px;
 }
 
+a.button.primary{
+  line-height: 10px;
+  font-size: 15px !important;
+}
+
+
+a.button.primary:hover, button.primary:hover {
+  cursor: pointer;
+  background-color: #252578 !important;
+}
+
+button.background-searching{
+  animation: pulse 2s infinite
+}
+
+button.background-fail {
+    background-color: #ab5050 !important;
+}
+
+button.background-sucess {
+    background-color: #56ab50 !important;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(37, 37, 120, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(37, 37, 120, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(37, 37, 120, 0);
+  }
+}
+
+button.primary.center {
+  display: block;
+}
+
 textarea {
-  -webkit-border-radius: 5px !important;
-  -moz-border-radius: 5px !important;
   border-radius: 5px !important;
   font-size: 18px !important;
   height: 170px !important;
   width: 100% !important;
 }
+
+#email-success,
+#email-fail {
+  top: 0;
+  position: relative;
+  display: inline;
+  height: 40px;
+  width: 40px;
+}
+
+#email-button {
+  position: relative;
+  display: inline;
+  height: 35px;
+  width: 35px;
+}
+
 .social-img {
   float: right;
 }
@@ -276,19 +374,41 @@ ul.tags {
 
 .tags {
   font-family: "Raleway", sans-serif;
-  color: rgb(76, 76, 167);
-  font-size: 2vh;
+  color: #4343ce;
+  font-size: 18px;
   font-weight: 500;
-  margin-right: 20px;
+}
+
+.modal-links {
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+.modal-links > a {
+  color: black;
+}
+
+.modal-links > a {
+  margin-right: 50px;
+}
+
+nav .marker {
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 6px;
+  border-radius: 20px;
+  background: black;
+  transition: 0.5s;
 }
 
 @media only screen and (max-width: 600px) {
   .tags {
-    font-family: "Raleway", sans-serif;
-    color: rgb(76, 76, 167);
-    font-size: 1.5vh;
-    font-weight: 500;
-    margin-right: 20px;
+    font-size: 15px;
+  }
+
+  .modal-link {
   }
 }
 
@@ -299,11 +419,44 @@ li > a > img {
   margin-right: 20px;
 }
 
-/*SLICK - SLIDER*/
+/*SLICK - SLIDER - CARDS*/
 
 .project {
   border-radius: 20px;
+  border-color: #c5c5c5;
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
   margin: 10px;
+}
+
+.project > h3 {
+  margin: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.project > p {
+  color: #707070;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 100px;
+}
+
+.project > button {
+  font-size: 15px !important;
+  margin: 20px auto;
+}
+
+.project > img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black !important;
 }
 
 /*IFRAME*/
@@ -330,10 +483,14 @@ li > a > img {
 /*PROJECT*/
 
 .card {
-  background-color: rgb(242, 242, 242) !important;
+  background-color: #f6f6f6 !important;
   border-radius: 20px !important;
   border: 0 !important;
   padding: 20px;
+}
+
+.project-image {
+  border-radius: 20px;
 }
 
 /*NAV SCROLL HIDE*/
@@ -343,6 +500,7 @@ li > a > img {
   right: 0;
   top: 0;
   left: 0;
+  z-index: 0;
   transition: -webkit-transform 1s cubic-bezier(0.86, 0, 0.07, 1);
   transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
   transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1),
@@ -353,6 +511,7 @@ li > a > img {
   -webkit-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
   transform: translateY(-100%);
+  z-index: 0;
 }
 
 /*MODAL*/
@@ -360,46 +519,54 @@ li > a > img {
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 5; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: black; /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 /* Modal Body */
 .modal-body {
   padding: 2px 16px;
+  overflow: auto;
+  position: absolute;
+  max-height: 600px;
 }
 
 /* Modal Header */
-.modal-header-end {
-  padding-top: 13vh;
-  background-color: rgba(255, 230, 0, 1);
-  background-repeat: no-repeat;
-  background-image: url("../assets/curve.svg");
-}
 .modal-header {
   border-radius: 20px 20px 0px 0px;
   padding: 15px 16px;
-  background-color: rgba(255, 230, 0, 1);
+  padding-bottom: 6vh;
+  background-image: url("../assets/curve_modal.svg");
+  background-position: bottom;
 }
 
 /* Modal Content */
 .modal-content {
-  position: relative;
+  position:relative;
+  padding-bottom: 15px;
   margin: auto;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   animation-name: animatetop;
-  width: 80%;
-  background-color: rgb(236, 236, 236);
+  top: -50px;
+  width: 70%;
+  background-color: #f6f6f6;
   animation-duration: 0.4s;
-  min-height: 100px;
+  min-height: 30vh;
+  max-height: 90vh;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 1500px) {
+  .modal-content {
+    width: 90%;
+  }
 }
 
 /* The Close Button */
@@ -424,7 +591,7 @@ li > a > img {
     opacity: 0;
   }
   to {
-    top: 0;
+    top: -50;
     opacity: 1;
   }
 }

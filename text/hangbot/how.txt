@@ -1,0 +1,1 @@
+It is written in JavaScript and uses the official discord bot library to create a hangman game. The bot is deployed on Heroku, which is a cloud platform.

@@ -1,0 +1,1 @@
+This was my first time working with hardware and more specifically, IoT hardware. So I learned the basics about IoT and how to use the MQTT protocol. I also learned about hardware and how to connect wires into different components.

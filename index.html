@@ -2,8 +2,13 @@
 <html lang="en" class="no-js">
 
 <head>
+  <title>Adams</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <base href="/">
+
+  <!--EMAIL FORM-->
+  <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 
   <!-- LOCAL -->
   <link rel="stylesheet" href="css/main.css" />
@@ -11,6 +16,8 @@
   <script src="js/project-generator.js"></script>
   <script src="js/nav-scroll-hide.js"></script>
   <script src="js/modal.js" defer></script>
+  <script src="js/marker-animation.js"></script>
+  <script src="js/email-form.js"></script>
 
   <!-- FONTS -->
   <link
@@ -34,6 +41,14 @@
   <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
     integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
 
+  <!-- SCROLL-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
+  <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+
+  <!--LOTTIE-->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
 </head>
 
 <body>
@@ -44,7 +59,7 @@
       <div class="grid-container fluid vertical-padding-nav">
         <div class="logo"><img src="assets/al.png"></div>
         <nav class="menu align-right font-raleway" data-smooth-scroll>
-          <ul id="nav-menu" class="nav-menu menu align-right vertical medium-horizontal menu">
+          <ul id="nav-menu" class="nav-menu menu align-right vertical medium-horizontal">
             <li><a href="#home">HOME</a></li>
             <li><a href="#project">PROJECTS</a></li>
             <li><a href="#about">ABOUT ME</a></li>
@@ -66,7 +81,7 @@
       <div class="grid-container fluid vertical-padding-medium">
         <div class="grid-x grid-padding-x medium-center">
           <div class="cell small-12 medium-12 large-6">
-            <h1 class="font-raleway large-h-size">My name is Adam.</h1>
+            <h1 class="font-raleway large-h-size">Hello! I'm Adam.</h1>
             <div class="vertical-padding-small-bottom">
               <h2 class="font-poiret mediumsmall-h-size">
                 Web & Software Developer.
@@ -74,10 +89,14 @@
               <h2 class="font-poiret mediumsmall-h-size">
                 Certified Coffee Lover.
               </h2>
+              <h2 class="font-poiret mediumsmall-h-size">
+                Learning Enthusiast.
+              </h2>
             </div>
           </div>
           <div class="cell show-for-large  medium-5 large-6">
-            <img src="assets/coffee.svg" />
+            <lottie-player src="anim/lander-animation.json" speed="1" loop autoplay></lottie-player>
+            <!--<img src="assets/coffee.svg" />-->
           </div>
         </div>
       </div>
@@ -89,83 +108,76 @@
         <div class="grid-x grid-padding-x">
           <h2 class="font-raleway medium-h-size cell">Projects</h2>
           <div id="slider-nav" class="slider-nav cell">
+
+
+
           </div>
         </div>
       </div>
 
-      <div class="grid-container fluid vertical-padding-medium-top">
-        <div id="myModal" class="modal">
-          <div class="modal-content">
-            <div class="modal-header">
-              <span class="close">&times;</span>
-              <h2>Modal Header</h2>
-            </div>
-            <div class="modal-header-end"></div>
-            <div class="modal-body">
-              <p>Some text in the Modal Body</p>
-              <p>Some other text...</p>
-            </div>
-          </div>
-        </div>
+      <div id="modal-holder" class="grid-container fluid vertical-padding-medium-top">
+
 
       </div>
 
-  </div>
-
-  </section>
+    </section>
 
 
-  <!-- ABOUT ME PAGE  -->
-  <section id="about" class="whiteoffset-background fluid vertical-padding-small">
-    <div class="grid-container fluid">
-      <div class="grid-x grid-padding-x">
-        <h2 class="font-raleway medium-h-size cell">About Me</h2>
-        <div class="cell small-12 large-6">
-          <h3 class="font-raleway small-h-size">Who Am I?</h3>
-          <p id="desc" class="font-poiret"></p>
-        </div>
-        <div class="cell large-6">
-          <div class="cell small-12 large-6 vertical-padding-small">
-            <h3 class="font-raleway small-h-size">Primary Skills:</h3>
-            <ul id="skill-list"></ul>
-          </div>
+    <!-- ABOUT ME PAGE  -->
+    <section id="about" class="whiteoffset-background fluid vertical-padding-small">
+      <div class="grid-container fluid">
+        <div class="grid-x grid-padding-x">
+          <h2 class="font-raleway medium-h-size cell">About Me</h2>
           <div class="cell small-12 large-6">
-            <h3 class="font-raleway small-h-size">Find Me On:</h3>
-            <ul id="social-list"></ul>
+            <h3 class="font-raleway small-h-size">Who Am I?</h3>
+            <p id="desc" class="font-poiret"></p>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT PAGE  -->
-  <section id="contact" class="fluid vertical-padding-small whiteoffset-background">
-    <div class="grid-container fluid vertical-padding-medium">
-      <div class="grid-x grid-padding-x horizontal-padding">
-        <div class="form-background cell">
-          <h2 class="font-raleway medium-h-size text-center no-margin-padding">Want to know more?</h2>
-          <h3 class="font-raleway medium-h-size text-center thin no-margin-padding">Send me a message</h3>
-          <form>
-            <label>Name
-              <input class="input-field" type="text" />
-            </label>
-            <label>Email
-              <input class="input-field" type="text" />
-            </label>
-            <label>Message
-              <textarea></textarea>
-            </label>
-            <div class="center-element">
-              <input type="submit" class="button" value="Send!" />
+          <div class="cell large-6">
+            <div class="cell small-12 large-6 vertical-padding-small">
+              <h3 class="font-raleway small-h-size">Primary Skills:</h3>
+              <ul id="skill-list"></ul>
             </div>
-          </form>
-          <div class="social-img">
-            <img src="assets/social.svg" />
+            <div class="cell small-12 large-6">
+              <h3 class="font-raleway small-h-size">Find Me On:</h3>
+              <ul id="social-list"></ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- CONTACT PAGE  -->
+    <section id="contact" class="fluid vertical-padding-small whiteoffset-background">
+      <div class="grid-container fluid vertical-padding-medium">
+        <div class="grid-x grid-padding-x horizontal-padding">
+          <div class="form-background cell">
+            <h2 class="font-raleway medium-h-size text-center no-margin-padding">Want to know more?</h2>
+            <h3 class="font-raleway medium-h-size text-center thin no-margin-padding">Send me a message</h3>
+            <form id="contact-form" method=”POST” enctype=”multipart/form-data” name=”EmailForm” >
+              <label>Name
+                <input type="text" id="name" name="name" class="input-field" type="text" required/>
+              </label>
+              <label>Email
+                <input type="email" id="email" name="email" class="input-field" type="text" required/>
+              </label>
+              <label>Message
+                <textarea  id="message" maxlength="6000" required></textarea>
+              </label>
+              <div class="center-element">
+                <button id="send-email" class="primary" type="submit">
+                  Send
+                </button>
+              </div>
+            </form>
+            <p id="help-text" class="font-poiret"> </p>
+            <div class="social-img">
+              <img src="assets/social.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
 
 </body>
 

@@ -1,0 +1,1 @@
+An RC car turned into an IoT car. The car is controlled over the Internet. That is, one does not have to be one the same network to control it. The car also measures the temperature of its surroundings. It is controlled using an Android application.

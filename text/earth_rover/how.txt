@@ -1,0 +1,1 @@
+On the IoT car sits a LoPy4 which is a microcomputer using micropython. The LoPy5 device communicates with the self-made Android application via an MQTT broker. They send and receive information, including driving instructions and temperature. 
