@@ -118,7 +118,7 @@ function createModal(project, i) {
   var header = createHeader(project, i);
   var desc = createDescription(project, i);
   var video = createVideo(project, i);
-  var demo = createDemo(project, i);
+  //var demo = createDemo(project, i);
 
   modalContent.append(header);
 
@@ -127,7 +127,7 @@ function createModal(project, i) {
   modalBody.id = "modal-body-" + i;
   modalBody.append(desc);
   modalBody.append(video);
-  modalBody.append(demo);
+  //modalBody.append(demo);
   modalContent.append(modalBody);
 
   modal.append(modalContent);
@@ -197,11 +197,11 @@ function createHeader(project, i) {
   a2.innerText = "Video";
   nav.append(a2);
 
-  var a3 = document.createElement("a");
+  /*var a3 = document.createElement("a");
   a3.classList.add("modal-link");
   a3.id = "link" + i + "-demo";
   a3.innerText = "Demo";
-  nav.append(a3);
+  nav.append(a3);*/
 
   var marker = document.createElement("div");
   marker.classList.add("marker");
@@ -283,26 +283,35 @@ function createDescription(project, i) {
 
   section.append(div);
 
-  if(project["read-more"]){
-    var div2 = document.createElement("div");
-    div2.classList.add(
-      "grid-x",
-      "horizontal-padding-small",
-      "horizontal-margin",
-      "justify-child-text",
-      "child-text-padding-right"
-    );
+  var div2 = document.createElement("div");
+  div2.classList.add(
+    "grid-x",
+    "horizontal-padding-small",
+    "horizontal-margin",
+    "justify-child-text",
+    "child-text-padding-right"
+  );
 
+  if(project["read-more"]){
     var a = document.createElement("a");
-    a.classList.add("button","primary" ,"center")
+    a.classList.add("button","primary" ,"center", "margin-right")
     a.innerText = "Read More"
     a.href = project["read-more"]
     div2.append(a)
-    section.append(div2)
 
   }
 
+  if(project["source-code"]){
+    var a = document.createElement("a");
+    a.classList.add("button","primary" ,"center", "margin-right")
+    a.innerText = "Source Code"
+    a.href = project["source-code"]
+    div2.append(a)
 
+
+  }
+
+  section.append(div2)
   return section;
 }
 
@@ -362,10 +371,10 @@ function setUpModalTabs(i) {
   var videoTab = document.getElementById("modal" + i + "-video");
   var videoLink = document.getElementById("link" + i + "-video");
 
-  var demoTab = document.getElementById("modal" + i + "-demo");
-  var demoLink = document.getElementById("link" + i + "-demo");
+  /*var demoTab = document.getElementById("modal" + i + "-demo");
+  var demoLink = document.getElementById("link" + i + "-demo");*/
 
-  var tabs = [descTab, videoTab, demoTab];
+  var tabs = [descTab, videoTab/*, demoTab*/];
 
   hideAllTabs();
   descTab.style.display = "block";
@@ -381,10 +390,10 @@ function setUpModalTabs(i) {
     videoTab.style.display = "block";
   };
 
-  demoLink.onclick = () => {
+  /*demoLink.onclick = () => {
     hideAllTabs();
     demoTab.style.display = "block";
-  };
+  };*/
 
   function hideAllTabs() {
     for (tab of tabs) {
@@ -438,8 +447,8 @@ function setUpMarker() {
   for (let marker of markers) {
     let descLink = document.getElementById("link" + i + "-description");
     let videoLink = document.getElementById("link" + i + "-video");
-    let demoLink = document.getElementById("link" + i + "-demo");
-    let links = [descLink, videoLink, demoLink];
+    //let demoLink = document.getElementById("link" + i + "-demo");
+    let links = [descLink, videoLink/*, demoLink*/];
 
     let activeLink = links[0];
     activeLink = indicator(activeLink, marker);

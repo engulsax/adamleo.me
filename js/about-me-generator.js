@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     var json = JSON.parse(text);
 
     var desc = document.getElementById("desc");
-    desc.innerText = json["about"];
+    desc.innerText =  getTextFromFile(json["about"])
     desc.classList.add("text-p-size");
 
     var skillList = document.getElementById("skill-list");
@@ -45,4 +45,23 @@ function loadJSON(callback) {
     }
   };
   xobj.send(null);
+}
+
+function getTextFromFile(file)
+{
+    var allText = "";
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                allText = rawFile.responseText;
+            }
+        }
+    }
+    rawFile.send(null);
+    return allText;
 }

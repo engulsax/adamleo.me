@@ -9,7 +9,8 @@
       "img": "../assets/earthrover_img.png",
       "video": "https://www.youtube.com/embed/SoKVDrakUeI",
       "tags": ["#Hardware", "#IOT", "#Python", "#Software", "#Kotlin"],
-      "read-more": "https://hackmd.io/@adamcarlleo/EarthRover"
+      "read-more": "https://hackmd.io/@adamcarlleo/EarthRover",
+      "source-code" :""
     },
     {
       "name": "Bulk",
@@ -20,18 +21,8 @@
       "img": "../assets/bulk_img.png",
       "video": "https://www.youtube.com/embed/sMlyaJEZu-8",
       "tags": ["#Scrum", "#Android", "#Kotlin", "#Bluetooth"],
-      "read-more": "../pdf/bulk.pdf"
-    },
-    {
-      "name": "Hangbot",
-      "abstract":"Discord hangman bot written in JavaScript.",
-      "desc-is": "../text/hangbot/desc.txt",
-      "desc-how": "../text/hangbot/how.txt",
-      "desc-learn": "../text/hangbot/learned.txt",
-      "img": "../assets/hangman_img.png",
-      "video": "",
-      "tags": ["#Discord", "#Bot" , "#JavaScript", "#Game" ],
-      "read-more":""
+      "read-more": "../pdf/bulk.pdf",
+      "source-code" :""
     },
     {
       "name": "N-Queens",
@@ -42,7 +33,20 @@
       "img": "../assets/nqueen_img.png",
       "video": "",
       "tags": ["#AI","#GenticAlgorithim", "#Python", "#QT"],
-      "read-more": "../pdf/nqueens.pdf"
+      "read-more": "../pdf/nqueens.pdf",
+      "source-code" :"https://github.com/engulsax/n-queens/tree/master"
+    },
+    {
+      "name": "Hangbot",
+      "abstract":"Discord hangman bot written in JavaScript.",
+      "desc-is": "../text/hangbot/desc.txt",
+      "desc-how": "../text/hangbot/how.txt",
+      "desc-learn": "../text/hangbot/learned.txt",
+      "img": "../assets/hangman_img.png",
+      "video": "",
+      "tags": ["#Discord", "#Bot" , "#JavaScript", "#Game" ],
+      "read-more":"",
+      "source-code" :"https://github.com/engulsax/hangbot/tree/master"
     }
   ]
 }

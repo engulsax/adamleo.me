@@ -1,5 +1,5 @@
 {
-  "about": "I am a software developer, web developer, and programmer.\nMy passion is building excellent software that improves the lives of those around me.\n\nI am currently a student at Jönköping University in Sweden, studying Software Development and Mobile Platforms. \nI love learning new stuff and evolving my skills through practice and reading.",
+  "about": "../text/about-me.txt",
   "skills": [
     {
       "name": "kotlin",
