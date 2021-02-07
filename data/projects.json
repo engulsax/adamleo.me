@@ -32,7 +32,7 @@
       "desc-learn": "../text/nqueens/learned.txt",
       "img": "../assets/nqueen_img.png",
       "video": "",
-      "tags": ["#AI","#GenticAlgorithim", "#Python", "#QT"],
+      "tags": ["#AI","#GenticAlgorithim", "#Python"],
       "read-more": "../pdf/nqueens.pdf",
       "source-code" :"https://github.com/engulsax/n-queens/tree/master"
     },

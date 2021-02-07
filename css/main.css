@@ -144,16 +144,16 @@ ul.nav-menu > li > a {
 }
 
 .vertical-padding-small-bottom {
-  padding-bottom: 2em;
+  padding-bottom: 2rem;
 }
 
 .vertical-padding-medium-top {
-  padding-top: 4em;
+  padding-top: 4rem;
 }
 
 .vertical-padding-medium {
-  padding-top: 2em;
-  padding-bottom: 4em;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
 }
 
 .text-center {
@@ -161,8 +161,8 @@ ul.nav-menu > li > a {
 }
 
 .vertical-padding-large {
-  padding-top: 10em;
-  padding-bottom: 10em;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .margin-right{
@@ -171,13 +171,13 @@ ul.nav-menu > li > a {
 }
 
 .horizontal-padding {
-  padding-left: 18vw;
-  padding-right: 18vw;
+  padding-left: 18rem;
+  padding-right: 18rem;
 }
 
 .horizontal-padding-small {
-  padding-left: 3vw;
-  padding-right: 3vw;
+  padding-left: 5rem;
+  padding-right: 5rem
 }
 
 .center-element {
@@ -194,31 +194,21 @@ ul.nav-menu > li > a {
   margin: 10px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
   .horizontal-padding {
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
   .horizontal-padding-small {
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .horizontal-padding {
-    padding-left: 5vw;
-    padding-right: 5vw;
-  }
-  .horizontal-padding-small {
-    padding-left: 1vw;
-    padding-right: 1vw;
-  }
-}
 
 .small-padding {
-  padding-right: 4vw;
-  padding-left: 4vw;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 /*FORM - BUTTONS*/
@@ -566,7 +556,7 @@ li > a > img {
   width: 70%;
   background-color: #f6f6f6;
   animation-duration: 0.4s;
-  min-height: 30vh;
+  min-height: 10vh;
   max-height: 90vh;
   overflow: hidden;
 }
