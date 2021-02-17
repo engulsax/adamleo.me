@@ -49,9 +49,9 @@ body {
   font-size: 3.8rem;
 }
 
-.justify-child-text > div {
+/*.justify-child-text > div {
   text-align: justify;
-}
+}*/
 
 .child-text-padding-right > div {
   padding-right: 40px;
@@ -176,8 +176,8 @@ ul.nav-menu > li > a {
 }
 
 .horizontal-padding-small {
-  padding-left: 5rem;
-  padding-right: 5rem
+  padding-left: 3rem;
+  padding-right: 3rem
 }
 
 .center-element {
@@ -196,12 +196,12 @@ ul.nav-menu > li > a {
 
 @media only screen and (max-width: 1200px) {
   .horizontal-padding {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-  .horizontal-padding-small {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+  .horizontal-padding-small {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -527,13 +527,17 @@ li > a > img {
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
+
+
 /* Modal Body */
 .modal-body {
   padding: 2px 16px;
   overflow: auto;
   position: absolute;
-  max-height: 600px;
+  height: 50vh;
 }
+
+
 
 /* Modal Header */
 .modal-header {
@@ -541,6 +545,7 @@ li > a > img {
   padding: 15px 16px;
   padding-bottom: 6vh;
   background-image: url("../assets/curve_modal.svg");
+  background-repeat: no-repeat;
   background-position: bottom;
 }
 
@@ -553,13 +558,27 @@ li > a > img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   animation-name: animatetop;
   top: -50px;
-  width: 70%;
+  width: 50%;
   background-color: #f6f6f6;
   animation-duration: 0.4s;
-  min-height: 10vh;
-  max-height: 90vh;
+  /*min-height: 10vh;
+  max-height: 90vh;*/
   overflow: hidden;
 }
+
+@media only screen and (min-width: 2000px) {
+  .modal-content {
+    position:relative;
+    padding-bottom: 15px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: animatetop;
+    top: -50px;
+    width: 40%;
+  }
+}
+
 
 @media only screen and (max-width: 1500px) {
   .modal-content {
