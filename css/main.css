@@ -558,7 +558,7 @@ li > a > img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   animation-name: animatetop;
   top: -50px;
-  width: 50%;
+  width: 60%;
   background-color: #f6f6f6;
   animation-duration: 0.4s;
   /*min-height: 10vh;
@@ -566,21 +566,14 @@ li > a > img {
   overflow: hidden;
 }
 
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 2500px) {
   .modal-content {
-    position:relative;
-    padding-bottom: 15px;
-    margin: auto;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    animation-name: animatetop;
-    top: -50px;
     width: 40%;
   }
 }
 
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1700px) {
   .modal-content {
     width: 90%;
   }

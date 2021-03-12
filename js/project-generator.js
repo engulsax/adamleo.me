@@ -117,7 +117,7 @@ function createModal(project, i) {
 
   var header = createHeader(project, i);
   var desc = createDescription(project, i);
-  var video = createVideo(project, i);
+  //var video = createVideo(project, i);
   //var demo = createDemo(project, i);
 
   modalContent.append(header);
@@ -126,7 +126,7 @@ function createModal(project, i) {
   modalBody.classList.add("modal-body");
   modalBody.id = "modal-body-" + i;
   modalBody.append(desc);
-  modalBody.append(video);
+  //modalBody.append(video);
   //modalBody.append(demo);
   modalContent.append(modalBody);
 
@@ -135,7 +135,7 @@ function createModal(project, i) {
 
   new SimpleBar(document.getElementById("modal-body-" + i));
 
-  setUpModalTabs(i);
+  //setUpModalTabs(i);
 }
 
 /*
@@ -311,11 +311,22 @@ function createDescription(project, i) {
 
   }
 
+  if(project["video"]){
+    var a = document.createElement("a");
+    a.classList.add("button","primary" ,"center", "margin-right")
+    a.innerText = "Video"
+    a.href = project["video"]
+    div2.append(a)
+
+
+  }
+
+
   section.append(div2)
   return section;
 }
 
-function createVideo(project, i) {
+/*function createVideo(project, i) {
 
   var section = document.createElement("section");
   section.id = "modal" + i + "-video";
@@ -374,9 +385,10 @@ function setUpModalTabs(i) {
   /*var demoTab = document.getElementById("modal" + i + "-demo");
   var demoLink = document.getElementById("link" + i + "-demo");*/
 
-  var tabs = [descTab, videoTab/*, demoTab*/];
+  //var tabs = [descTab, videoTab/*, demoTab*/];
 
-  hideAllTabs();
+
+ /* hideAllTabs();
   descTab.style.display = "block";
 
   //Switch between tabs
@@ -395,12 +407,13 @@ function setUpModalTabs(i) {
     demoTab.style.display = "block";
   };*/
 
-  function hideAllTabs() {
+ /* function hideAllTabs() {
     for (tab of tabs) {
       tab.style.display = "none";
     }
   }
 }
+*/
 
 function setUpModal(projects) {
   /*Only works for as long as projects num is under 10 (which it will be)*/
@@ -440,7 +453,7 @@ function setUpModal(projects) {
 
 /* MARKER */
 
-function setUpMarker() {
+/*function setUpMarker() {
   let markers = document.getElementsByClassName("marker");
   let i = 0;
 
@@ -448,7 +461,7 @@ function setUpMarker() {
     let descLink = document.getElementById("link" + i + "-description");
     let videoLink = document.getElementById("link" + i + "-video");
     //let demoLink = document.getElementById("link" + i + "-demo");
-    let links = [descLink, videoLink/*, demoLink*/];
+    let links = [descLink, videoLink];
 
     let activeLink = links[0];
     activeLink = indicator(activeLink, marker);
@@ -464,13 +477,13 @@ function setUpMarker() {
     });
     i++;
   }
-}
+}*/
 
-function indicator(e, marker) {
+/*function indicator(e, marker) {
   marker.style.left = e.offsetLeft + "px";
   marker.style.width = e.offsetWidth + "px";
   return e;
-}
+}*/
 
 function getTextFromFile(file)
 {

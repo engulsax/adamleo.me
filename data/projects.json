@@ -7,7 +7,7 @@
       "desc-how": "../text/earth_rover/how.txt",
       "desc-learn": "../text/earth_rover/learned.txt",
       "img": "../assets/earthrover_img.png",
-      "video": "https://www.youtube.com/embed/SoKVDrakUeI",
+      "video": "",
       "tags": ["#Hardware", "#IOT", "#Python", "#Software", "#Kotlin"],
       "read-more": "https://hackmd.io/@adamcarlleo/EarthRover",
       "source-code" :""
@@ -19,7 +19,7 @@
       "desc-how": "../text/bulk/how.txt",
       "desc-learn": "../text/bulk/learned.txt",
       "img": "../assets/bulk_img.png",
-      "video": "https://www.youtube.com/embed/sMlyaJEZu-8",
+      "video": "https://www.youtube.com/watch?v=sMlyaJEZu-8",
       "tags": ["#Scrum", "#Android", "#Kotlin", "#Bluetooth"],
       "read-more": "../pdf/bulk.pdf",
       "source-code" :""
