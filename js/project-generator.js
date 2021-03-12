@@ -182,7 +182,7 @@ function createHeader(project, i) {
   }
   header.append(ul);
 
-  var nav = document.createElement("nav");
+  /*var nav = document.createElement("nav");
   nav.classList.add("horizontal-padding-small", "modal-links");
 
   var a1 = document.createElement("a");
@@ -195,7 +195,7 @@ function createHeader(project, i) {
   a2.classList.add("modal-link");
   a2.id = "link" + i + "-video";
   a2.innerText = "Video";
-  nav.append(a2);
+  nav.append(a2);*/
 
   /*var a3 = document.createElement("a");
   a3.classList.add("modal-link");
@@ -203,12 +203,12 @@ function createHeader(project, i) {
   a3.innerText = "Demo";
   nav.append(a3);*/
 
-  var marker = document.createElement("div");
+ /* var marker = document.createElement("div");
   marker.classList.add("marker");
   marker.id = "marker" + i;
-  nav.append(marker);
+  nav.append(marker);*/
 
-  header.append(nav);
+  //header.append(nav);
 
   return header;
 }
